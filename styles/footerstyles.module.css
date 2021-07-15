@@ -1,0 +1,29 @@
+.footer__container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 16rem) [col-end]
+      ) [center-end] 1fr [full-end];
+    z-index: -1;
+
+  }
+
+  .footer__body {
+      grid-column: center-start / center-end;
+      align-content: center;
+      justify-content: center;
+      display: grid;
+      grid-gap: 1.5rem;
+      text-align: center;
+  }
+
+  .footer__body div img {
+      width: 24px;
+  }
+
+  .footer__icon{
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-content: center;
+  }

@@ -1,0 +1,57 @@
+
+
+
+.nav__parent {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}.nav__parent{
+    grid-column: full-start / full-end;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.nav__body {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    grid-column: full-start / full-end;
+    padding: 0 2rem;
+    
+}
+
+.nav__logo {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav__links{
+    flex-grow: 1;
+}
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav__list a {
+    font-size: 14px;
+}
+
+
+
+.nav__list a:hover, .nav__list a:focus {
+    font-weight: bold;
+}
+
+.nav__list li:nth-of-type(1) {
+    margin-left: auto;
+}
+

@@ -1,0 +1,42 @@
+.about__container {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 16rem) [col-end]
+      ) [center-end] 1fr [full-end];
+    z-index: -1;
+
+  }
+
+  .about__body {
+      margin: 15rem 0;
+      grid-column: center-start / center-end;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      display: grid;
+      grid-gap: 2rem;
+      padding:0 2rem;
+  }
+
+  .about__body div p {
+      font-size: 16px;
+  }
+
+  .about__body div img {
+      width: 300px;
+      object-fit: cover;
+      font-weight: bold;
+  }
+
+  .about_img{
+      display: grid;
+      grid-gap: 1rem;
+  }
+
+  .james__name {
+      text-transform: capitalize;
+  }
+  .about__text {
+  }
